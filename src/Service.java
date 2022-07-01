@@ -1,3 +1,4 @@
 public interface Service {
-    public void check();
-}
+    void check();
+
+    }

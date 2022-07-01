@@ -1,4 +1,4 @@
-public abstract class Transport {
+public abstract class Transport implements Service3{
     private String modelName;
     private int wheelsCount;
 
@@ -23,12 +23,5 @@ public abstract class Transport {
         this.wheelsCount = wheelsCount;
     }
 
-    @Override
-    public String toString() {
-        return String.format("%s имеет %s колес(а)", modelName, wheelsCount);
-    }
 
-    public void print() {
-        System.out.println(this);
-    }
 }
